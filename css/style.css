@@ -410,6 +410,9 @@ footer .content-footer .end {
         display: block;
         text-align: center;
         margin: 60px;
+        font-size: 40px;
+        position: ab;
+        top: 50px;
 
     }
 
@@ -419,6 +422,13 @@ footer .content-footer .end {
 
     .social {
         margin-top: 70px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     h3 {
@@ -453,4 +463,3 @@ footer .content-footer .end {
         gap: 1rem;
     }
 }
-
