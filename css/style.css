@@ -48,11 +48,30 @@ html {
     color: var(--lightColor);
 }
 
-
 h1 {
-    font-size: 4.65rem;
-    margin: 1.7rem 0;
-    color: var(--lightColor);
+font-size: 4.65rem;
+margin: 1.7rem 0;
+color: var(--lightColor);
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+border-right: .03em solid #ffff; /* The typwriter cursor */
+white-space: nowrap; 
+margin: 0 auto; 
+letter-spacing: .05em; /* Adjust as needed */
+animation: 
+  typing 3s steps(40, end),
+  blink-caret 0.7s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: #ffff; }
 }
 
 nav h2 {
@@ -434,4 +453,3 @@ footer .content-footer .end {
         gap: 1rem;
     }
 }
-
